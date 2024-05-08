@@ -1,0 +1,21 @@
+pipeline {
+    agent any
+
+    stages {
+        stage("Build") {
+            steps {
+               sh " "
+            }
+        }
+
+    }
+
+    post {
+                    success {
+                        archiveArtifacts artifacts: 'target/AbyssAFKZone.jar'
+                                    always {
+                                      cleanWs()
+                                    }
+                    }
+    }
+}
