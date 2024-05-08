@@ -1,0 +1,9 @@
+reward-interval: 60 # seconds
+afk-zone-region:
+    min-x: 26
+    max-x: 19
+    min-y: 108
+    max-y: 103
+    min-z: 7
+    max-z: 0
+    world: world

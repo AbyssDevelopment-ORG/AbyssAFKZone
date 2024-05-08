@@ -1,0 +1,5 @@
+org\abyssdev\abyssafkzone\player\AfkPlayer.class
+org\abyssdev\abyssafkzone\task\AfkTask.class
+org\abyssdev\abyssafkzone\AbyssAFKZone.class
+org\abyssdev\abyssafkzone\reward\AfkReward.class
+org\abyssdev\abyssafkzone\player\registry\AfkPlayerRegistry.class

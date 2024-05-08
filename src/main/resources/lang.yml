@@ -1,0 +1,25 @@
+messages:
+    "no-permission":
+        sound:
+            enabled: true
+            value: "FIZZ"
+            volume: 1
+            pitch: 1
+        message:
+            enabled: true
+            value:
+                - "&c&lAbyss&4&lDev &7‣ &cYou do not have permission to do that!"
+    "entered-zone":
+        sound:
+            enabled: true
+            value: "FIZZ"
+            volume: 1
+            pitch: 1
+        message:
+            enabled: true
+            value:
+                - "&b&lAbyss&3&lDev &7‣ &bYou have entered the &3AFK Zone&b!"
+    "time-message":
+        action-bar:
+            enabled: true
+            value: "&6&l🕝 &aYou have been AFK for &e%time% &aseconds!"

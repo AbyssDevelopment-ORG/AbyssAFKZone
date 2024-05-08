@@ -1,0 +1,10 @@
+name: AbyssAFKZone
+version: '1.0.0'
+main: org.abyssdev.abyssafkzone.AbyssAFKZone
+api-version: '1.13'
+authors:
+    - AbyssDev
+    - Relocation
+
+depend:
+    - AbyssLib
