@@ -17,8 +17,8 @@ import java.util.List;
  */
 @Getter
 public final class AfkReward {
-  private final Message message;
 
+  private final Message message;
   private final List<String> commands;
 
   private final double chance;

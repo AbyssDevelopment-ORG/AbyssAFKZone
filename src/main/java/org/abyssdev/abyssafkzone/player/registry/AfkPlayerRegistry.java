@@ -18,7 +18,7 @@ import java.util.UUID;
 public final class AfkPlayerRegistry implements Registry<UUID, AfkPlayer> {
   private final Map<UUID, AfkPlayer> players = Maps.mutable.empty();
   
-  @NotNull
+  @NotNull @Override
   public Optional<AfkPlayer> get(final @NotNull UUID key) {
     if (!this.players.containsKey(key)) {
       final AfkPlayer player = new AfkPlayer(key);

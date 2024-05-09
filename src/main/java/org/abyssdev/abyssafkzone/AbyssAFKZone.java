@@ -1,7 +1,5 @@
 package org.abyssdev.abyssafkzone;
 
-import java.util.UUID;
-
 import lombok.Getter;
 import net.abyssdev.abysslib.config.AbyssConfig;
 import net.abyssdev.abysslib.patterns.registry.Registry;
@@ -15,6 +13,8 @@ import org.abyssdev.abyssafkzone.player.registry.AfkPlayerRegistry;
 import org.abyssdev.abyssafkzone.reward.AfkReward;
 import org.abyssdev.abyssafkzone.task.AfkTask;
 import org.bukkit.configuration.file.FileConfiguration;
+
+import java.util.UUID;
 
 /**
  * Main class of the plugin.
@@ -59,7 +59,7 @@ public final class AbyssAFKZone extends AbyssPlugin {
 
     private void loadRewards() {
         this.rewardsConfig.getSectionKeys("rewards").forEach(path -> {
-            AfkReward reward = new AfkReward(this.rewardsConfig, "rewards." + path);
+            final AfkReward reward = new AfkReward(this.rewardsConfig, "rewards." + path);
             this.rewardCollection.add(reward.getChance(), reward);
         });
     }
