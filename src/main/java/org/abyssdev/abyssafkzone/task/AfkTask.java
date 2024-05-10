@@ -27,6 +27,7 @@ public final class AfkTask extends AbyssTask<AbyssAFKZone> {
         super(plugin, 20, true);
     }
 
+    @Override
     public void run() {
         for (final Player player : Bukkit.getOnlinePlayers()) {
             final Optional<AfkPlayer> profileOpt = this.plugin.getPlayerRegistry().get(player.getUniqueId());

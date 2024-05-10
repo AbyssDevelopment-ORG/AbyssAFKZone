@@ -29,7 +29,8 @@ public final class AfkPlayerRegistry implements Registry<UUID, AfkPlayer> {
 
     return Optional.of(this.players.get(key));
   }
-  
+
+  @Override
   public Map<UUID, AfkPlayer> getRegistry() {
     return this.players;
   }
